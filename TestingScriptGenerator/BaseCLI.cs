@@ -1,6 +1,6 @@
 ﻿using CommandLine;
 using CommandLine.Text;
-using Tools;
+using TestingScriptGenerator.Helpers;
 
 namespace TestingScriptGenerator
 {

@@ -21,8 +21,8 @@ namespace TestingScriptGenerator
         private static void Run(Options opts)
         {
             ConsoleHelper.WriteLineColor($"Fetching data...", ConsoleColor.Blue);
-            GitFetcher.CheckAndDownloadBenchmarksAsync("https://github.com/aibasel/downward-benchmarks", "Dependencies/downward-benchmarks").Wait();
-            GitFetcher.CheckAndDownloadBenchmarksAsync("https://github.com/aibasel/downward-benchmarks", "Dependencies/downward-benchmarks").Wait();
+            GitFetcher.CheckAndDownloadBenchmarksAsync("https://github.com/aibasel/downward-benchmarks", PathHelper.RootPath("Dependencies/downward-benchmarks")).Wait();
+            GitFetcher.CheckAndDownloadBenchmarksAsync("https://github.com/ipc2023-learning/benchmarks", PathHelper.RootPath("Dependencies/learning-benchmarks")).Wait();
 
             ConsoleHelper.WriteLineColor($"Resolving input wildcards...", ConsoleColor.Blue);
             var domains = PathHelper.ResolveFileWildcards(opts.Domains.ToList());
