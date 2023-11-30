@@ -81,18 +81,18 @@ namespace TestingScriptGenerator
 
         private static void GenerateScript(List<FileInfo> domains, List<FileInfo> trainingProblems, List<FileInfo> testingProblems, int split, string method, string verification, int timeout)
         {
-            var relative = Directory.GetCurrentDirectory();
+            var relative = Directory.GetCurrentDirectory().Substring(1);
             var sb = new StringBuilder($"dotnet run --configuration Release --project MetaActions.Train -- \\{Environment.NewLine}");
 
             sb.AppendLine($"\t--domains\\");
             foreach (var domain in domains)
-                sb.AppendLine($"\t\t\t\t\t\t {domain.FullName.Replace(relative, "").Substring(1)} \\");
+                sb.AppendLine($"\t\t\t\t\t\t ..{domain.FullName.Replace(relative, "").Substring(1)} \\");
             sb.AppendLine($"\t--train-problems\\");
             foreach (var problem in trainingProblems)
-                sb.AppendLine($"\t\t\t\t\t\t {problem.FullName.Replace(relative, "").Substring(1)} \\");
+                sb.AppendLine($"\t\t\t\t\t\t ..{problem.FullName.Replace(relative, "").Substring(1)} \\");
             sb.AppendLine($"\t--test-problems\\");
             foreach (var problem in testingProblems)
-                sb.AppendLine($"\t\t\t\t\t\t {problem.FullName.Replace(relative, "").Substring(1)} \\");
+                sb.AppendLine($"\t\t\t\t\t\t ..{problem.FullName.Replace(relative, "").Substring(1)} \\");
 
             sb.AppendLine($"\t--generation-strategy {method}\\");
             sb.AppendLine($"\t--verification-strategy {verification}\\");
@@ -102,7 +102,7 @@ namespace TestingScriptGenerator
 
             sb.AppendLine($"cp output/train/*.zip \"TestingSets/all_p{split}_{method}_{verification}_{timeout}m.zip\"");
 
-            File.WriteAllText($"TestingScripts/all_{split}_{method}_{verification}_{timeout}m.sh", sb.ToString());
+            File.WriteAllText($"TestingScripts/all_p{split}_{method}_{verification}_{timeout}m.sh", sb.ToString());
         }
     }
 }
