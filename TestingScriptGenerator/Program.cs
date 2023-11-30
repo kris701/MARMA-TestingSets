@@ -36,6 +36,8 @@ namespace TestingScriptGenerator
             if (testProblems.Any(x => !File.Exists(x.FullName)))
                 throw new FileNotFoundException("Test problem file not found!");
             testProblems = testProblems.Distinct().ToList();
+            if (!Directory.Exists("TestingScripts"))
+                Directory.CreateDirectory("TestingScripts");
 
             ConsoleHelper.WriteLineColor($"Generating splits...", ConsoleColor.Blue);
             var sortedTrainProblems = new List<FileInfo>();
