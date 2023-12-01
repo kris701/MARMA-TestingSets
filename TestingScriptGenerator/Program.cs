@@ -8,7 +8,6 @@ namespace TestingScriptGenerator
     internal class Program : BaseCLI
     {
         private static int _seed = 1633123;
-        private static int _timeLimit = 120;
         static int Main(string[] args)
         {
             var parser = new Parser(with => with.HelpWriter = null);
@@ -76,7 +75,7 @@ namespace TestingScriptGenerator
             ConsoleHelper.WriteLineColor($"Outputting scripts...", ConsoleColor.Blue);
             foreach(var generation in opts.GenerationMethods)
                 foreach (var verification in opts.VerificationMethods)
-                    GenerateScript(domains, sortedTrainProblems, sortedTestProblems, opts.TrainSplit, generation, verification, _timeLimit, opts.Prefix);
+                    GenerateScript(domains, sortedTrainProblems, sortedTestProblems, opts.TrainSplit, generation, verification, opts.TimeLimit, opts.Prefix);
         }
 
         private static void GenerateScript(List<FileInfo> domains, List<FileInfo> trainingProblems, List<FileInfo> testingProblems, int split, string method, string verification, int timeout, string prefix)

@@ -24,5 +24,7 @@ namespace TestingScriptGenerator
         public IEnumerable<string> VerificationMethods { get; set; } = new List<string>();
         [Option("prefix", Required = true, HelpText = "Prefix for the train script files.")]
         public string Prefix { get; set; } = "All";
+        [Option("timelimit", Required = true, HelpText = "Time limit to put in the scripts, in minutes")]
+        public int TimeLimit { get; set; } = 120;
     }
 }
