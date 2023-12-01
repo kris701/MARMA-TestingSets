@@ -18,7 +18,6 @@ dotnet run --configuration Release --project MetaActions.Train -- \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/termes/domain.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/tidybot/domain.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/tpp/domain.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/domain.pddl \
 	--train-problems\
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/driverlog/p01.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/freecell/p01.pddl \
@@ -30,7 +29,6 @@ dotnet run --configuration Release --project MetaActions.Train -- \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/rovers/p02.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/snake/p02.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/tpp/p02.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p02.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/childsnack/p03.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/depots/p03.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/grid/p03.pddl \
@@ -70,7 +68,6 @@ dotnet run --configuration Release --project MetaActions.Train -- \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/satellite/p08.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/termes/p08.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/tpp/p08.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p08.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/depots/p09.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/freecell/p09.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/grid/p09.pddl \
@@ -80,7 +77,6 @@ dotnet run --configuration Release --project MetaActions.Train -- \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/snake/p09.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/termes/p09.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/tidybot/p09.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p09.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/blocksworld/p10.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/freecell/p10.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/gripper/p10.pddl \
@@ -94,24 +90,20 @@ dotnet run --configuration Release --project MetaActions.Train -- \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/pipesworld-notankage/p11.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/pipesworld-tankage/p11.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/snake/p11.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p11.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/freecell/p12.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/grid/p12.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/miconic/p12.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/pipesworld-tankage/p12.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/rovers/p12.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/snake/p12.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p12.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/depots/p13.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/mprime/p13.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/pipesworld-tankage/p13.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/satellite/p13.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/termes/p13.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p13.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/freecell/p14.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/hiking/p14.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/tpp/p14.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p14.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/childsnack/p15.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/hiking/p15.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/miconic/p15.pddl \
@@ -134,7 +126,6 @@ dotnet run --configuration Release --project MetaActions.Train -- \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/rovers/p18.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/snake/p18.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/tpp/p18.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p18.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/blocksworld/p19.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/driverlog/p19.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/gripper/p19.pddl \
@@ -185,7 +176,6 @@ dotnet run --configuration Release --project MetaActions.Train -- \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/driverlog/p26.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/gripper/p26.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/hiking/p26.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p26.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/childsnack/p27.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/grid/p27.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/miconic/p27.pddl \
@@ -209,7 +199,6 @@ dotnet run --configuration Release --project MetaActions.Train -- \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/rovers/p30.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/snake/p30.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/tidybot/p30.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p30.pddl \
 	--test-problems\
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/blocksworld/p01.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/blocksworld/p02.pddl \
@@ -571,26 +560,6 @@ dotnet run --configuration Release --project MetaActions.Train -- \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/tpp/p26.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/tpp/p27.pddl \
 						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/tpp/p30.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p01.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p03.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p04.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p05.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p06.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p07.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p10.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p15.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p16.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p17.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p19.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p20.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p21.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p22.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p23.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p24.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p25.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p27.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p28.pddl \
-						 ../Dependencies/autoscale-benchmarks/21.11-agile-strips/visitall/p29.pddl \
 	--generation-strategy PreconditionMetaActions\
 	--verification-strategy Weak1m\
 	--multitask\
