@@ -22,5 +22,7 @@ namespace TestingScriptGenerator
         public IEnumerable<string> GenerationMethods { get; set; } = new List<string>();
         [Option("verification-methods", Required = true, HelpText = "What meta action verification methods to make scripts for.")]
         public IEnumerable<string> VerificationMethods { get; set; } = new List<string>();
+        [Option("prefix", Required = true, HelpText = "Prefix for the train script files.")]
+        public string Prefix { get; set; } = "All";
     }
 }

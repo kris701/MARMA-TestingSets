@@ -76,10 +76,10 @@ namespace TestingScriptGenerator
             ConsoleHelper.WriteLineColor($"Outputting scripts...", ConsoleColor.Blue);
             foreach(var generation in opts.GenerationMethods)
                 foreach (var verification in opts.VerificationMethods)
-                    GenerateScript(domains, sortedTrainProblems, sortedTestProblems, opts.TrainSplit, generation, verification, _timeLimit);
+                    GenerateScript(domains, sortedTrainProblems, sortedTestProblems, opts.TrainSplit, generation, verification, _timeLimit, opts.Prefix);
         }
 
-        private static void GenerateScript(List<FileInfo> domains, List<FileInfo> trainingProblems, List<FileInfo> testingProblems, int split, string method, string verification, int timeout)
+        private static void GenerateScript(List<FileInfo> domains, List<FileInfo> trainingProblems, List<FileInfo> testingProblems, int split, string method, string verification, int timeout, string prefix)
         {
             var relative = Directory.GetCurrentDirectory().Substring(1);
             var sb = new StringBuilder($"dotnet run --configuration Release --project MetaActions.Train -- \\{Environment.NewLine}");
@@ -100,9 +100,9 @@ namespace TestingScriptGenerator
             sb.AppendLine($"\t--timelimit {timeout}\\");
             sb.AppendLine($"\t--rebuild");
 
-            sb.AppendLine($"cp output/train/*.zip \"TestingSets/all_p{split}_{method}_{verification}_{timeout}m.zip\"");
+            sb.AppendLine($"cp output/train/*.zip \"TestingSets/{prefix}_p{split}_{method}_{verification}_{timeout}m.zip\"");
 
-            File.WriteAllText($"TestingScripts/all_p{split}_{method}_{verification}_{timeout}m.sh", sb.ToString());
+            File.WriteAllText($"TestingScripts/{prefix}_p{split}_{method}_{verification}_{timeout}m.sh", sb.ToString());
         }
     }
 }
