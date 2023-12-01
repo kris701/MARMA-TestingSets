@@ -266,8 +266,8 @@ dotnet run --configuration Release --project MetaActions.Train -- \
 						 ../Dependencies/downward-benchmarks/zenotravel/p18.pddl \
 						 ../Dependencies/downward-benchmarks/zenotravel/p20.pddl \
 	--generation-strategy PreconditionMetaActions\
-	--verification-strategy Weak1m\
+	--verification-strategy Weak5mUseful\
 	--multitask\
-	--timelimit 360\
+	--timelimit 120\
 	--rebuild
-cp output/train/*.zip "TestingSets/Downward_p10_PreconditionMetaActions_Weak1m_360m.zip"
+cp output/train/*.zip "TestingSets/Downward_p10_PreconditionMetaActions_Weak5mUseful_120m.zip"

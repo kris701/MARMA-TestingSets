@@ -1890,8 +1890,8 @@ dotnet run --configuration Release --project MetaActions.Train -- \
 						 ../Dependencies/learning-benchmarks/transport/testing/medium/p29.pddl \
 						 ../Dependencies/learning-benchmarks/transport/testing/medium/p30.pddl \
 	--generation-strategy PredicateMetaActions\
-	--verification-strategy Weak5m\
+	--verification-strategy Weak1mUseful\
 	--multitask\
-	--timelimit 360\
+	--timelimit 120\
 	--rebuild
-cp output/train/*.zip "TestingSets/IPC_p10_PredicateMetaActions_Weak5m_360m.zip"
+cp output/train/*.zip "TestingSets/IPC_p10_PredicateMetaActions_Weak1mUseful_120m.zip"
