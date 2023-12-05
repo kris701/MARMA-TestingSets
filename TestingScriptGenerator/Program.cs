@@ -62,9 +62,12 @@ namespace TestingScriptGenerator
                     }
                     sortedTrainProblems = sortedTrainProblems.OrderBy(x => x.Name).ToList();
                 }
-                foreach (var domainTrainProblem in domainTrainProblems)
-                    if (!sortedTrainProblems.Any(x => x.FullName == domainTrainProblem.FullName))
-                        sortedTestProblems.Add(domainTrainProblem);
+                if (opts.TrainTestMerge)
+                {
+                    foreach (var domainTrainProblem in domainTrainProblems)
+                        if (!sortedTrainProblems.Any(x => x.FullName == domainTrainProblem.FullName))
+                            sortedTestProblems.Add(domainTrainProblem);
+                }
                 foreach (var domainTestProblem in domainTestProblems)
                     if (!sortedTrainProblems.Any(x => x.FullName == domainTestProblem.FullName) && !sortedTestProblems.Any(x => x.FullName == domainTestProblem.FullName))
                         sortedTestProblems.Add(domainTestProblem);

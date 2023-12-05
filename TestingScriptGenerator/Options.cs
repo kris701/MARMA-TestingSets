@@ -26,5 +26,7 @@ namespace TestingScriptGenerator
         public string Prefix { get; set; } = "All";
         [Option("timelimit", Required = true, HelpText = "Time limit to put in the scripts, in minutes")]
         public int TimeLimit { get; set; } = 120;
+        [Option("train-test-merge", Required = false, HelpText = "If the remaining training problems that is unused, should be put into the testing set.")]
+        public bool TrainTestMerge { get; set; } = false;
     }
 }
